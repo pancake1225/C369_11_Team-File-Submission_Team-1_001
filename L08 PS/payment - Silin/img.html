@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 70%;
+            height: auto;
+            border: 2px solid #333;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img src="https://www.alextrades.com/wp-content/uploads/2022/01/AlexTrades-SGQR.png" alt="QR Code">
+        <div class="caption">Scan the QR Code to Pay</div>
+        <button type="button" onclick="navigateToPage2()">Complete</button>
+        <script>
+            function navigateToPage2() {
+                window.location.href = "paid.html";
+            }
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F2F0DF;
+            ;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+
+        .navbar {
+            display: flex;
+            background-color: #FAA0A0;
+            overflow: hidden;
+            color: black;
+        }
+
+        .navbar a {
+            flex: 1;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="/aboutme.html">Home</a>
+        <a href="/login - Alysha/login.html">Account</a>
+        <a href="/Insurance - Jimi/insurance.html">Insurance</a>
+        <a href="/scheme - Javier/schemes.html">Scheme and subsidies</a>
+        <a href="/payment - Silin/payment.html">Payment</a>
+        <a href="/service - Jerald/services.html">Services</a>
+    </div>
+
+
+    <div class="container">
+        <h2>Payment Details</h2>
+        <form action="/payment - Silin/paid.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" min="1" required>
+
+            <label for="payment_method">Payment Method:</label>
+
+            <button type="button" onclick="navigateToPage4()">Credit Card</button>
+            <script>
+                function navigateToPage4() {
+                    window.location.href = "/payment - Silin/wallet.html"; // Navigate to wallet.html
+                }
+            </script>
+
+
+            <button type="button" onclick="navigateToPage3()">Paynow</button>
+            <script>
+                function navigateToPage3() {
+                    window.location.href = "/payment - Silin/img.html"; // Navigate to img.html
+                    console.log("paynow");
+                }
+            </script>
+
+
+            <button type="button" onclick="navigateToPage2()">Paypal</button>
+            <script>
+                function navigateToPage2() {
+                    window.location.href = "/payment - Silin/paid.html"; // Navigate to paid.html
+                }
+            </script>
+
+
+            <button type="button" onclick="navigateToPage2()">Bank Transfer</button>
+            <script>
+                function navigateToPage2() {
+                    window.location.href = "/payment - Silin/paid.html"; // Navigate to paid.html
+                }
+            </script>
+        </form>
+    </div>
+</body>
+
+</html>

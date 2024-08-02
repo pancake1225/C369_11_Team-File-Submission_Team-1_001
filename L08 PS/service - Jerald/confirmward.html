@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #F2F0DF;
+    }
+
+    /* Create two columns/boxes that float next to each other */
+    nav {
+      float: left;
+      width: 50%;
+      height: 300px;
+      /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    #hello {
+      color: green;
+      background-color: pink;
+    }
+
+    #important {
+      color: red;
+      background-color: pink;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: #FAA0A0;
+      overflow: hidden;
+      color: black;
+    }
+
+    .navbar a {
+      flex: 1;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .button-yes,
+    .button-no {
+      padding: 10px 20px;
+      margin: 0 10px 10px 0;
+      /* Add margin to push buttons away from each other and container edge */
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      /* Ensure buttons are inline */
+    }
+
+    .button-yes {
+      background-color: green;
+    }
+
+    .button-no {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="/aboutme.html">Home</a>
+    <a href="/login - Alysha/login.html">Account</a>
+    <a href="/Insurance - Jimi/insurance.html">Insurance</a>
+    <a href="/scheme - Javier/schemes.html">Scheme and subsidies</a>
+    <a href="/payment - Silin/payment.html">Payment</a>
+    <a href="/service - Jerald/services.html">Services</a>
+  </div>
+
+
+  <h2>For confirmation</h2>
+  <p></p>
+  <p>For you, for me, for everyone</p>
+  <p id="hello">Please make sure this is the correct booking</p>
+  <h2>Is this the correct date?</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <p>Date:</p>
+        <h3 id="important">29/7/2024 to<br> 1/8/2024</h3>
+        <h3 id="imporant">Add to cart?</h3>
+        <div class="button-container">
+          <button class="button-yes" onclick="handleClick('Yes')">Yes</button>
+          <button class="button-no" onclick="handleClick('No')">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function handleClick(answer) {
+      if (answer === 'Yes') {
+        window.location.href = '/scheme - Javier/schemes.html'; // Change this to the URL of the page you want to navigate to when "Yes" is clicked
+      } else if (answer === 'No') {
+        window.location.href = '/service - Jerald/description.html'; // Change this to the URL of the page you want to navigate to when "No" is clicked
+      }
+    }
+  </script>
+
+</body>
+
+</html>

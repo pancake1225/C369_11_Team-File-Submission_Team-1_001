@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: #FAA0A0;
+      overflow: hidden;
+      color: black;
+    }
+
+    .navbar a {
+      flex: 1;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: space-around;
+    }
+
+    .container .section {
+      flex: 1;
+      margin: 10px;
+      max-width: calc(33.333% - 20px);
+      box-sizing: border-box;
+    }
+
+    .container .section img {
+      width: 100%;
+      height: auto;
+    }
+
+    .container .section h3 {
+      margin-top: 0;
+    }
+
+    .container .section button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .container .section button:hover {
+      background-color: #45a049;
+    }
+
+    @media (max-width: 900px) {
+      .container .section {
+        max-width: 100%;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #F2F0DF;
+    }
+
+    button {
+      background-color: #CB99C9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="/aboutme.html">Home</a>
+    <a href="/login - Alysha/login.html">Account</a>
+    <a href="/Insurance - Jimi/insurance.html">Insurance</a>
+    <a href="/scheme - Javier/schemes.html">Scheme and subsidies</a>
+    <a href="/payment - Silin/payment.html">Payment</a>
+    <a href="/service - Jerald/services.html">Services</a>
+  </div>
+
+
+  <h2>Services</h2>
+  <p>For you, for me, for everyone</p>
+
+  <div class="container">
+    <div class="section">
+      <h3>Consultation</h3>
+      <img src="https://thehealthcareinsights.com/wp-content/uploads/2021/02/Online-doctor-consultation.jpg"
+        alt="Consultation">
+      <p>A consultation with a doctor or other expert is a meeting with them to discuss a particular problem and get
+        their advice. Consultation is the process of getting advice from a doctor or other expert. A personal diet plan
+        is devised after a consultation with a nutritionist.</p>
+      <button type="button" onclick="window.location.href='/service - Jerald/description.html'">Enquire more</button>
+    </div>
+    <div class="section">
+      <h3>Short term care ward</h3>
+      <img
+        src="https://www.vhba.vic.gov.au/sites/default/files/styles/gallery_644x483/public/2022-07/VHBA-Health-Wangaratta-Hospital-RHIF-interior-short-stay-unit-beds-gallery-1000x750.jpg?itok=3mqBqfnx"
+        alt="Short term care ward">
+      <p>A short-stay ward is a ward in an accident and emergency department of a restructured hospital for patients who
+        need a short period of inpatient monitoring and treatment.</p>
+      <button type="button" onclick="window.location.href='/service - Jerald/dateward.html'">Enquire more</button>
+    </div>
+    <div class="section">
+      <h3>Long term care ward</h3>
+      <img
+        src="https://static1.straitstimes.com.sg/s3fs-public/styles/large30x20/public/articles/2016/05/19/jt-pixsaints-38440154-190516.jpg?VersionId=kKvS6Y7VGv15Xso.Y3SaaVS_P7T08wJW"
+        alt="Long term care ward">
+      <p>LTC wards provide long-term care for older adults with severe physical and cognitive problems under the
+        national healthcare insurance system. Patients in LTC wards are generally admitted from acute/subacute hospital
+        wards after acute treatments, or from home due to exacerbation of their disease conditions.</p>
+      <button type="button" onclick="location.href='/service - Jerald/cart.html'">Enquire more</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

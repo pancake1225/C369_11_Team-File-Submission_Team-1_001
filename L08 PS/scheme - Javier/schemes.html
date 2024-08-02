@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Schemes and Subsidies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('changi.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f0f8ff;
+            /* fallback color */
+            margin: 0;
+            padding: 0;
+            position: relative;
+            /* Add this to position the button */
+            min-height: 100vh;
+            /* Ensure the body takes up the full viewport height */
+        }
+
+        header {
+            background-color: #F3CFC6;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+        }
+
+        .column {
+            width: 48%;
+        }
+
+        .scheme,
+        .subsidy {
+            background-color: rgba(255, 255, 255, 0.9);
+            /* semi-transparent background */
+            border: 1px solid #ddd;
+            margin: 1em 0;
+            padding: 1em;
+            border-radius: 5px;
+        }
+
+        .scheme h2,
+        .subsidy h2 {
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #FAA0A0;
+            overflow: hidden;
+            color: black;
+        }
+
+        .navbar a {
+            flex: 1;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .button-link {
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .button-link button {
+            padding: 15px 30px;
+            /* Increased padding to make the button bigger */
+            background-color: #CB99C9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            /* Ensure consistent font size */
+        }
+
+        .button-link button:hover {
+            background-color: #e7abe5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/aboutme.html">Home</a>
+        <a href="/login - Alysha/login.html">Account</a>
+        <a href="/Insurance - Jimi/insurance.html">Insurance</a>
+        <a href="/scheme - Javier/schemes.html">Scheme and subsidies</a>
+        <a href="/payment - Silin/payment.html">Payment</a>
+        <a href="/service - Jerald/services.html">Services</a>
+    </div>
+
+    <header>
+        <h1>Health Schemes and Subsidies</h1>
+    </header>
+    <main>
+        <div class="column">
+            <h2>Schemes</h2>
+            <div class="scheme">
+                <h3>Scheme 1: MediSave</h3>
+                <p>Description: MediSave is a national medical savings scheme that helps individuals set aside part of
+                    their income to pay for their personal or approved dependents’ hospitalisation, day surgery, and
+                    certain outpatient expenses, as well as their healthcare needs in old age.</p>
+                <p>Eligibility: Any CPF member who contributes to Medisave and has a positive Medisave balance.</p>
+                <p>Benefits: Can be used to pay for personal and family's hospitalisation.</p>
+                <a href="/Insurance - Jimi/insurance.html" class="button-link"><button>Option 1</button></a>
+            </div>
+            <div class="scheme">
+                <h3>Scheme 2: MediShield Life</h3>
+                <p>Description: MediShield Life is a basic health insurance plan that helps to pay for large hospital
+                    bills and selected costly outpatient treatments, such as dialysis and chemotherapy for cancer.</p>
+                <p>Eligibility: All Singapore Citizens and Permanent Residents are automatically covered by MediShield
+                    Life.</p>
+                <p>Benefits: Provides lifetime coverage, ensuring that you and your loved ones can always afford to pay
+                    for basic healthcare needs.</p>
+                <a href="/medishield_life" class="button-link"><button>Option 2</button></a>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Subsidies</h2>
+            <div class="subsidy">
+                <h3>Subsidy</h3>
+                <p>Description: Subsidies for Specialist Outpatient Care at Public Healthcare Institutions.</p>
+                <p>Eligibility: Singapore Citizens and Permanent Residents receiving subsidised Specialist Outpatient
+                    Clinic care at Public Healthcare Institutions.</p>
+                <p>Benefits: Up to 70% subsidy for Singapore Citizens, 25% for Permanent Residents.</p>
+            </div>
+            <div class="subsidy">
+                <h3>Income-Based Subsidies</h3>
+                <table>
+                    <tr>
+                        <th>Monthly Per Capita Household Income (PCHI)</th>
+                        <th>SCs</th>
+                    </tr>
+                    <tr>
+                        <td>No PCHI</td>
+                        <td>
+                            <p>Annual Value ≤ $21,000: 70%</p>
+                            <p>$21,000 &lt; Annual Value ≤ $25,000: 50%</p>
+                            <p>Annual Value > $25,000: 30%</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>$0 &lt; PCHI ≤ $1,200</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr>
+                        <td>$1,200 &lt; PCHI ≤ $2,000</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td>$2,000 &lt; PCHI ≤ $3,300</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td>$3,300 &lt; PCHI ≤ $6,500</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>PCHI > $6,500</td>
+                        <td>30%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
